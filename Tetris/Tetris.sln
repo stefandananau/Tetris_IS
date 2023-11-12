@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TetrisUI", "TetrisUI\TetrisUI.csproj", "{37A1A75D-A991-4E08-8B48-9F9FDCF1712A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TetrisLogic", "TetrisLogic\TetrisLogic.csproj", "{5F2ED35B-F0D6-42A1-9BDD-16229F37ACBF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{37A1A75D-A991-4E08-8B48-9F9FDCF1712A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37A1A75D-A991-4E08-8B48-9F9FDCF1712A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37A1A75D-A991-4E08-8B48-9F9FDCF1712A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F2ED35B-F0D6-42A1-9BDD-16229F37ACBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F2ED35B-F0D6-42A1-9BDD-16229F37ACBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F2ED35B-F0D6-42A1-9BDD-16229F37ACBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F2ED35B-F0D6-42A1-9BDD-16229F37ACBF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -3,7 +3,9 @@ namespace TetrisLogic.Base
 {
     public class Block
     {
-       BlockColor Color { get; set; }
-       bool IsLocked { get; set; }
+       public BlockColor Color { get; }
+       public bool IsLocked { get; }
+
+       public Block() { }
     }
 }
