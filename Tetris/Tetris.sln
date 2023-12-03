@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TetrisUI", "TetrisUI\TetrisUI.csproj", "{37A1A75D-A991-4E08-8B48-9F9FDCF1712A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game", "Game\Game.csproj", "{CAEB4844-BEB1-4B9E-8BCA-687963524769}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TetrisLogic", "TetrisLogic\TetrisLogic.csproj", "{5F2ED35B-F0D6-42A1-9BDD-16229F37ACBF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Logic\Logic.csproj", "{36D1F4B0-EBE9-4260-AB19-317EAD6006D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,19 +13,19 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{37A1A75D-A991-4E08-8B48-9F9FDCF1712A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{37A1A75D-A991-4E08-8B48-9F9FDCF1712A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{37A1A75D-A991-4E08-8B48-9F9FDCF1712A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{37A1A75D-A991-4E08-8B48-9F9FDCF1712A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5F2ED35B-F0D6-42A1-9BDD-16229F37ACBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5F2ED35B-F0D6-42A1-9BDD-16229F37ACBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5F2ED35B-F0D6-42A1-9BDD-16229F37ACBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5F2ED35B-F0D6-42A1-9BDD-16229F37ACBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAEB4844-BEB1-4B9E-8BCA-687963524769}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAEB4844-BEB1-4B9E-8BCA-687963524769}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAEB4844-BEB1-4B9E-8BCA-687963524769}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAEB4844-BEB1-4B9E-8BCA-687963524769}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36D1F4B0-EBE9-4260-AB19-317EAD6006D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36D1F4B0-EBE9-4260-AB19-317EAD6006D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36D1F4B0-EBE9-4260-AB19-317EAD6006D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36D1F4B0-EBE9-4260-AB19-317EAD6006D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {4B13BA7A-4C34-4F92-9D59-F79CA08FBA34}
+		SolutionGuid = {63D8BFDF-CC71-4A2A-804E-139AED0FEA1C}
 	EndGlobalSection
 EndGlobal
