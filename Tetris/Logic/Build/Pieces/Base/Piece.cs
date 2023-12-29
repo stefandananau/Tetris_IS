@@ -10,6 +10,8 @@ namespace Logic.Build.Pieces.Base
         void MoveLeft(Block[,] boardState);
         void MoveRight(Block[,] boardState);
         void Rotate(Block[,] boardState);
+        void Set();
+        void Reset();
         bool IsPlaced();
         List<Block> GetBlocks();
     }

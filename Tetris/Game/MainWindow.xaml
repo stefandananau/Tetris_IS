@@ -5,8 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Game"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="1000" Width="1000">
+    <Window.DataContext>
+        <local:Commands/>
+    </Window.DataContext>
+    <Window.InputBindings>
+        <KeyBinding Key="d"
+                Command="{Binding MoveCommand}"
+                CommandParameter="d"/>
+        <KeyBinding Key="a"
+                Command="{Binding MoveCommand}"
+                CommandParameter="a"/>
+        <KeyBinding Key="s"
+                Command="{Binding MoveCommand}"
+                CommandParameter="s"/>
+        <KeyBinding Key="w"
+                Command="{Binding MoveCommand}"
+                CommandParameter="w"/>
+        <KeyBinding Key="q"
+                Command="{Binding MoveCommand}"
+                CommandParameter="q"/>
+        <KeyBinding Key="Space"
+                Command="{Binding MoveCommand}"
+                CommandParameter=" "/>
+    </Window.InputBindings>
+    <Grid Background="Gray">
+        <Canvas Width="450" Height="900" Background="Black" Margin="50,42,500,42" x:Name="Board"/>
+        <Canvas Width="225" Height="225" Background="Black" Margin="505,82,270,677" x:Name="Next"/>
+        <Canvas Width="225" Height="225" Background="Black" Margin="735,82,40,677" x:Name="Saved"/>
+        <Label Content="Next"  Margin="585,36,333,870" Width="100" Height="50" FontSize="25"/>
+        <Label Content="Saved"  Margin="809,36,75,870" Width="100" Height="50" FontSize="25"/>
     </Grid>
 </Window>

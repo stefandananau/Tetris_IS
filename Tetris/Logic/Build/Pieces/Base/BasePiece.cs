@@ -5,9 +5,9 @@ namespace Logic.Build.Pieces.Base
 {
     public abstract class BasePiece : Piece
     {
-        private List<Block> Blocks;
+        protected List<Block> Blocks;
 
-        private bool isPlaced;
+        protected bool isPlaced;
         
         public BasePiece() 
         {
@@ -21,6 +21,10 @@ namespace Logic.Build.Pieces.Base
 
         public void Drop(Block[,] boardState)
         {
+            if (isPlaced == true)
+            {
+                return;
+            }
             while (!isPlaced)
             {
                 MoveDown(boardState);
@@ -29,9 +33,13 @@ namespace Logic.Build.Pieces.Base
 
         public void MoveDown(Block[,] boardState)
         {
-            foreach(var block in Blocks)
+            if (isPlaced == true)
             {
-                if (boardState[block.Y + 1,block.X] != null)
+                return;
+            }
+            foreach (var block in Blocks)
+            {
+                if (block.Y == 19 || boardState[block.Y + 1,block.X] != null)
                 {
                     isPlaced = true;
                     return;
@@ -46,11 +54,14 @@ namespace Logic.Build.Pieces.Base
 
         public void MoveLeft(Block[,] boardState)
         {
-            foreach(var block in Blocks)
+            if (isPlaced == true)
             {
-                if (boardState[block.X - 1,block.Y] != null)
+                return;
+            }
+            foreach (var block in Blocks)
+            {
+                if (block.X == 0 || boardState[block.Y,block.X-1] != null)
                 {
-                    isPlaced = true;
                     return;
                 }
             }
@@ -63,11 +74,14 @@ namespace Logic.Build.Pieces.Base
 
         public void MoveRight(Block[,] boardState)
         {
+            if(isPlaced == true)
+            {
+                return;
+            }
             foreach (var block in Blocks)
             {
-                if (boardState[block.X + 1,block.Y] != null)
+                if (block.X == 9 || boardState[block.Y, block.X + 1] != null)
                 {
-                    isPlaced = true;
                     return;
                 }
             }
@@ -80,6 +94,9 @@ namespace Logic.Build.Pieces.Base
 
 
         public abstract void Rotate(Block[,] boardState);
+
+        public abstract void Set();
+        public abstract void Reset();
 
         public bool IsPlaced()
         {

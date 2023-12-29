@@ -2,7 +2,7 @@
 {
     public enum Color
     {
-        Gray = 0,
+        White = 0,
         Light_Blue = 1,
         Blue = 2,
         Orange = 3,

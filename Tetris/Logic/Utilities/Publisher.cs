@@ -20,6 +20,10 @@ namespace Logic.Utilities
 
         public void AddSubscriber(Subscriber subscriber)
         {
+            if(subscribers == null)
+            {
+                subscribers = new List<Subscriber>();
+            }
             subscribers.Add(subscriber);
         }
         

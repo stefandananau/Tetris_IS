@@ -36,5 +36,12 @@
             X = x;
             Y = y;
         }
+
+        public Block(int x, int y, Color color)
+        {
+            X = x;
+            Y = y;
+            Color = color;
+        }
     }
 }

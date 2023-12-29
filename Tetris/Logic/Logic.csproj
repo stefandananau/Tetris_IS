@@ -45,7 +45,7 @@
     <Compile Include="Build\Blocks\Block.cs" />
     <Compile Include="Build\Blocks\Color.cs" />
     <Compile Include="Build\Board.cs" />
-    <Compile Include="Build\Game.cs" />
+    <Compile Include="Build\GameController.cs" />
     <Compile Include="Build\Pieces\Base\BasePiece.cs" />
     <Compile Include="Build\Pieces\Base\Piece.cs" />
     <Compile Include="Build\Pieces\Factory\PieceFactory.cs" />
