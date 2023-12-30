@@ -12,19 +12,13 @@ namespace Game
 {
     public class DrawingHelper
     {
-        public static Collection<Line> VectorOfLines { get; set; }
         public static Collection<Rectangle> VectorOfRectangles { get; set; }
-        public static Collection<Ellipse> VectorOfEllipses { get; set; }
-        public static Collection<Polygon> VectorOfPolygons { get; set; }
 
         private static Dictionary<Shape, (double, double)> ShapesProperties { get; }
 
         static DrawingHelper()
         {
-            VectorOfLines = new Collection<Line>();
             VectorOfRectangles = new Collection<Rectangle>();
-            VectorOfEllipses = new Collection<Ellipse>();
-            VectorOfPolygons = new Collection<Polygon>();
 
             ShapesProperties = new Dictionary<Shape, (double, double)>();
         }
@@ -86,14 +80,8 @@ namespace Game
                 canvas.Children.Remove(element);
                 ShapesProperties.Remove(element as Shape);
 
-                if (element is Line line)
-                    return VectorOfLines.Remove(line);
-                else if (element is Rectangle rectangle)
+                if (element is Rectangle rectangle)
                     return VectorOfRectangles.Remove(rectangle);
-                else if (element is Ellipse ellipse)
-                    return VectorOfEllipses.Remove(ellipse);
-                else if (element is Polygon polygon)
-                    return VectorOfPolygons.Remove(polygon);
             }
 
             return false;

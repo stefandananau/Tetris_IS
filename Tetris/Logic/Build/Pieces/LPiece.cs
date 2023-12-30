@@ -38,10 +38,10 @@ namespace Logic.Build.Pieces
         {
             Blocks = new List<Block>
             {
-                new Block(0, 0, Color.Blue),
-                new Block(1, 0, Color.Blue),
-                new Block(2, 0, Color.Blue),
-                new Block(0, 1, Color.Blue)
+                new Block(3, 0, Color.Blue),
+                new Block(4, 0, Color.Blue),
+                new Block(5, 0, Color.Blue),
+                new Block(3, 1, Color.Blue)
             };
         }
     }

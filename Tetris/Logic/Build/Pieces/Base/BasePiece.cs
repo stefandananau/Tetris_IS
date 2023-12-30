@@ -19,16 +19,19 @@ namespace Logic.Build.Pieces.Base
             return Blocks;
         }
 
-        public void Drop(Block[,] boardState)
+        public int Drop(Block[,] boardState)
         {
+            var bonusScore = 0;
             if (isPlaced == true)
             {
-                return;
+                return 0;
             }
             while (!isPlaced)
             {
+                bonusScore = bonusScore + 10;
                 MoveDown(boardState);
             }
+            return bonusScore;
         }
 
         public void MoveDown(Block[,] boardState)
@@ -39,7 +42,7 @@ namespace Logic.Build.Pieces.Base
             }
             foreach (var block in Blocks)
             {
-                if (block.Y == 19 || boardState[block.Y + 1,block.X] != null)
+                if (block.Y == 21 || boardState[block.Y + 1,block.X] != null)
                 {
                     isPlaced = true;
                     return;

@@ -5,7 +5,7 @@ namespace Logic.Build.Pieces.Base
 {
     public interface Piece
     {
-        void Drop(Block[,] boardState);
+        int Drop(Block[,] boardState);
         void MoveDown(Block[,] boardState);
         void MoveLeft(Block[,] boardState);
         void MoveRight(Block[,] boardState);

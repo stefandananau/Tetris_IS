@@ -1,6 +1,8 @@
 ﻿using Logic.Build.Blocks;
 using Logic.Build.Pieces.Base;
+using System;
 using System.Collections.Generic;
+using System.Globalization;
 
 namespace Logic.Build
 {
@@ -12,7 +14,7 @@ namespace Logic.Build
         }
         public Board() 
         {
-            BoardState = new Block[20,10];
+            BoardState = new Block[22,10];
         }
 
         public void Place(Piece piece)
@@ -23,9 +25,50 @@ namespace Logic.Build
             }
         }
 
-        public void DeleteCompletedLines()
+        public int DeleteCompletedLines()
         {
+            var number_of_lines = 0;
+            for(int i = 2; i < 22; i++)
+            {
+                if (IsCompleted(i))
+                {
+                    number_of_lines++;
+                    DeleteLine(i);
+                    i--;
+                }
+            }
+            return number_of_lines;
+        }
 
+        private bool IsCompleted(int line)
+        {
+            for(int i = 0; i < 10; i++)
+            {
+                if (BoardState[line,i] == null)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        private void DeleteLine(int line)
+        {
+            for(int i = line; i > 0; i--)
+            {
+                for (int j = 0; j < 10; j++)
+                {
+                    if (BoardState[i-1,j] == null)
+                    {
+                        BoardState[i, j] = null;
+                    }
+                    else
+                    {
+                        BoardState[i,j] = new Block(BoardState[i-1,j]);
+                    }
+                }
+            }
+            
         }
 
         public List<Block> GetBoardStateList()

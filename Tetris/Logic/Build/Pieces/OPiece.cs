@@ -37,10 +37,10 @@ namespace Logic.Build.Pieces
         {
             Blocks = new List<Block>
             {
-                new Block(0, 0, Color.Yellow),
-                new Block(1, 0, Color.Yellow),
-                new Block(1, 1, Color.Yellow),
-                new Block(0, 1, Color.Yellow)
+                new Block(4, 0, Color.Yellow),
+                new Block(5, 0, Color.Yellow),
+                new Block(5, 1, Color.Yellow),
+                new Block(4, 1, Color.Yellow)
             };
         }
     }

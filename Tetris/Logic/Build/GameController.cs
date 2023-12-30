@@ -38,6 +38,7 @@ namespace Logic.Build
             GameBoard = new Board();
             _pieceFactory = new PieceFactory();
             CurrentPiece = _pieceFactory.CreatePiece(new Random().Next() % 7 + 1);
+            CurrentPiece.Set();
             NextPiece = _pieceFactory.CreatePiece(new Random().Next() % 7 + 1);
             _started = false;
             _gameThread = new Timer(Tick, new AutoResetEvent(false), 1000, 500);
@@ -75,6 +76,7 @@ namespace Logic.Build
             if(SavedPiece == null)
             {
                 var piece = NextPiece;
+                NextPiece = _pieceFactory.CreatePiece(new Random().Next() % 7 + 1);
                 piece.Set();
                 SavedPiece = CurrentPiece;
                 CurrentPiece = piece;

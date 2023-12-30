@@ -43,5 +43,12 @@
             Y = y;
             Color = color;
         }
+
+        public Block(Block block, int increment = 1)
+        {       
+            X = block.X;
+            Y = block.Y + increment;
+            Color = block.Color;
+        }
     }
 }

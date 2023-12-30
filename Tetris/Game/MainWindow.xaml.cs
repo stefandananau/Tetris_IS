@@ -29,11 +29,12 @@ namespace Game
                 DrawingHelper.RemoveUiElements(Saved);
                 foreach (var block in state)
                 {
-                    DrawingHelper.DrawRectangle(Board, new Point(block.X * 45, block.Y * 45), new Point((block.X + 1) * 45, (block.Y + 1) * 45), 1, block.Color, 1);
+                    DrawingHelper.DrawRectangle(Board, new Point(block.X * 45, (block.Y - 2) * 45), new Point((block.X + 1) * 45, (block.Y - 1) * 45), 1, block.Color, 1);
                 }
                 foreach (var block in current)
                 {
-                    DrawingHelper.DrawRectangle(Board, new Point(block.X * 45, block.Y * 45), new Point((block.X + 1) * 45, (block.Y + 1) * 45), 1, block.Color, 1);
+                    if(block.Y >= 2)
+                    DrawingHelper.DrawRectangle(Board, new Point(block.X * 45, (block.Y - 2) * 45), new Point((block.X + 1) * 45, (block.Y - 1) * 45), 1, block.Color, 1);
                 }
                 foreach(var block in next)
                 {
