@@ -7,7 +7,6 @@ namespace Logic.Build.Pieces
 {
     public class TPiece : BasePiece
     {
-        private int mode = 0;
         public TPiece()
         {
             Blocks = new List<Block>
@@ -21,6 +20,7 @@ namespace Logic.Build.Pieces
 
         public override void Reset()
         {
+            mode = 0;
             Blocks = new List<Block>
             {
                 new Block(0, 0, Color.Magenta),
@@ -114,6 +114,7 @@ namespace Logic.Build.Pieces
 
         public override void Set()
         {
+            mode = 0;
             Blocks = new List<Block>
             {
                 new Block(4, 0, Color.Magenta),

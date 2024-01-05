@@ -7,10 +7,8 @@ namespace Logic.Build.Pieces
 {
     public class IPiece : BasePiece
     {
-        private int mode;
         public IPiece()
         {
-            mode = 0;
             Blocks = new List<Block>
             {
                 new Block(0, 0, Color.Light_Blue),

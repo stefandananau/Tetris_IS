@@ -6,7 +6,7 @@ namespace Logic.Build.Pieces.Factory
     {
         public Piece CreatePiece(int type)
         {
-            return new SPiece();
+            return new JPiece();
             switch (type)
             {
                 case 1:

@@ -6,7 +6,6 @@ namespace Logic.Build.Pieces
 {
     public class ZPiece : BasePiece
     {
-        int mode = 0;
         public ZPiece()
         {
             Blocks = new List<Block>
@@ -20,6 +19,7 @@ namespace Logic.Build.Pieces
 
         public override void Reset()
         {
+            mode = 0;
             Blocks = new List<Block>
             {
                 new Block(0, 0, Color.Red),
@@ -76,6 +76,7 @@ namespace Logic.Build.Pieces
 
         public override void Set()
         {
+            mode = 0;
             Blocks = new List<Block>
             {
                 new Block(4, 0, Color.Red),

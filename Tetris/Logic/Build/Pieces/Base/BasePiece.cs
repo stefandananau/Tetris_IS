@@ -8,6 +8,8 @@ namespace Logic.Build.Pieces.Base
         protected List<Block> Blocks;
 
         protected bool isPlaced;
+
+        protected int mode = 0;
         
         public BasePiece() 
         {
