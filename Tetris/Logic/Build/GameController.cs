@@ -24,23 +24,27 @@ namespace Logic.Build
         private Piece CurrentPiece;
         private Piece NextPiece;
         private Piece SavedPiece;
-        
         private PieceFactory _pieceFactory;
 
+        private int score;
         private bool _started;
-
         private bool _canSave;
 
         private Timer _gameThread;
 
         private GameController()
         {
+            _started = false;
+            _canSave = false;
+        }
+        private void StartGame()
+        {
+            score = 0;
             GameBoard = new Board();
             _pieceFactory = new PieceFactory();
             CurrentPiece = _pieceFactory.CreatePiece(new Random().Next() % 7 + 1);
             CurrentPiece.Set();
             NextPiece = _pieceFactory.CreatePiece(new Random().Next() % 7 + 1);
-            _started = false;
             _gameThread = new Timer(Tick, new AutoResetEvent(false), 1000, 500);
             _canSave = true;
         }
@@ -50,10 +54,17 @@ namespace Logic.Build
             {
                 GameBoard.Place(CurrentPiece);
                 GameBoard.DeleteCompletedLines();
+                if (GameBoard.Overflows())
+                {
+                    _gameThread.Dispose();
+                    _started = false;
+                    return;
+                }
                 NextPiece.Set();
                 CurrentPiece = NextPiece;
                 NextPiece = _pieceFactory.CreatePiece(new Random().Next() % 7 + 1);
                 _canSave = true;
+                
             }
             else
             {
@@ -97,6 +108,12 @@ namespace Logic.Build
 
         public void Command(char key)
         {
+            if (!_started)
+            {
+                StartGame();
+                _started = true;
+                return;
+            }
             switch(key)
             {
                 case 'w':
@@ -145,6 +162,11 @@ namespace Logic.Build
                 return new List<Block>();
             }
             return SavedPiece.GetBlocks();
+        }
+
+        public int GetScore()
+        {
+            return score;
         }
     }
 }

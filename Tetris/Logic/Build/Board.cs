@@ -81,5 +81,17 @@ namespace Logic.Build
             }
             return state;
         }
+
+        public bool Overflows()
+        {
+            for(int i = 0; i < 10; i++)
+            {
+                if (BoardState[1,i] != null)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }
