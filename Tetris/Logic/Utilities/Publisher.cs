@@ -12,6 +12,10 @@ namespace Logic.Utilities
 
         public void Notify()
         {
+            if(subscribers == null)
+            {
+                return;
+            }
             foreach (var subscriber in subscribers)
             {
                 subscriber.Update();

@@ -56,8 +56,7 @@ namespace Logic.Build
                 GameBoard.DeleteCompletedLines();
                 if (GameBoard.Overflows())
                 {
-                    _gameThread.Dispose();
-                    _started = false;
+                    Stop();
                     return;
                 }
                 NextPiece.Set();
@@ -73,6 +72,13 @@ namespace Logic.Build
 
             
 
+        }
+
+        public void Stop()
+        {
+            _gameThread.Dispose();
+            _started = false;
+            SavedPiece = null;
         }
 
         private void Tick(Object stateInfo)

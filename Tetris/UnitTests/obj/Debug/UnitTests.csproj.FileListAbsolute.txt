@@ -1,0 +1,17 @@
+C:\Users\Stefan\Documents\GitHub\Tetris_IS\Tetris\UnitTests\obj\Debug\UnitTests.csproj.AssemblyReference.cache
+C:\Users\Stefan\Documents\GitHub\Tetris_IS\Tetris\UnitTests\obj\Debug\UnitTests.csproj.CoreCompileInputs.cache
+C:\Users\Stefan\Documents\GitHub\Tetris_IS\Tetris\UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Stefan\Documents\GitHub\Tetris_IS\Tetris\UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Stefan\Documents\GitHub\Tetris_IS\Tetris\UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Stefan\Documents\GitHub\Tetris_IS\Tetris\UnitTests\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+C:\Users\Stefan\Documents\GitHub\Tetris_IS\Tetris\UnitTests\bin\Debug\UnitTests.dll
+C:\Users\Stefan\Documents\GitHub\Tetris_IS\Tetris\UnitTests\bin\Debug\UnitTests.pdb
+C:\Users\Stefan\Documents\GitHub\Tetris_IS\Tetris\UnitTests\bin\Debug\Logic.dll
+C:\Users\Stefan\Documents\GitHub\Tetris_IS\Tetris\UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Stefan\Documents\GitHub\Tetris_IS\Tetris\UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Stefan\Documents\GitHub\Tetris_IS\Tetris\UnitTests\bin\Debug\Logic.pdb
+C:\Users\Stefan\Documents\GitHub\Tetris_IS\Tetris\UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Stefan\Documents\GitHub\Tetris_IS\Tetris\UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Stefan\Documents\GitHub\Tetris_IS\Tetris\UnitTests\obj\Debug\UnitTests.csproj.CopyComplete
+C:\Users\Stefan\Documents\GitHub\Tetris_IS\Tetris\UnitTests\obj\Debug\UnitTests.dll
+C:\Users\Stefan\Documents\GitHub\Tetris_IS\Tetris\UnitTests\obj\Debug\UnitTests.pdb

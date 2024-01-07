@@ -1,6 +1,6 @@
-C:\Users\stefan\Documents\GitHub\Tetris_IS\Tetris\Logic\bin\Debug\Logic.dll
-C:\Users\stefan\Documents\GitHub\Tetris_IS\Tetris\Logic\bin\Debug\Logic.pdb
-C:\Users\stefan\Documents\GitHub\Tetris_IS\Tetris\Logic\obj\Debug\Logic.csproj.AssemblyReference.cache
-C:\Users\stefan\Documents\GitHub\Tetris_IS\Tetris\Logic\obj\Debug\Logic.csproj.CoreCompileInputs.cache
-C:\Users\stefan\Documents\GitHub\Tetris_IS\Tetris\Logic\obj\Debug\Logic.dll
-C:\Users\stefan\Documents\GitHub\Tetris_IS\Tetris\Logic\obj\Debug\Logic.pdb
+C:\Users\Stefan\Documents\GitHub\Tetris_IS\Tetris\Logic\bin\Debug\Logic.dll
+C:\Users\Stefan\Documents\GitHub\Tetris_IS\Tetris\Logic\bin\Debug\Logic.pdb
+C:\Users\Stefan\Documents\GitHub\Tetris_IS\Tetris\Logic\obj\Debug\Logic.csproj.AssemblyReference.cache
+C:\Users\Stefan\Documents\GitHub\Tetris_IS\Tetris\Logic\obj\Debug\Logic.csproj.CoreCompileInputs.cache
+C:\Users\Stefan\Documents\GitHub\Tetris_IS\Tetris\Logic\obj\Debug\Logic.dll
+C:\Users\Stefan\Documents\GitHub\Tetris_IS\Tetris\Logic\obj\Debug\Logic.pdb
