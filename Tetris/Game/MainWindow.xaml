@@ -35,5 +35,7 @@
         <Canvas Width="225" Height="225" Background="Black" Margin="735,82,40,677" x:Name="Saved"/>
         <Label Content="Next"  Margin="585,36,333,870" Width="100" Height="50" FontSize="25"/>
         <Label Content="Saved"  Margin="809,36,75,870" Width="100" Height="50" FontSize="25"/>
+        <Label Content="Score:"  Margin="535,356,365,546" FontSize="25"/>
+        <Label x:Name="Score"  Margin="618,356,57,546" FontSize="25"/>
     </Grid>
 </Window>

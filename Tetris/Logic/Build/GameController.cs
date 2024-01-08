@@ -53,7 +53,7 @@ namespace Logic.Build
             if (CurrentPiece.IsPlaced())
             {
                 GameBoard.Place(CurrentPiece);
-                GameBoard.DeleteCompletedLines();
+                score = score + GameBoard.DeleteCompletedLines();
                 if (GameBoard.Overflows())
                 {
                     Stop();
@@ -74,7 +74,7 @@ namespace Logic.Build
 
         }
 
-        public void Stop()
+        private void Stop()
         {
             _gameThread.Dispose();
             _started = false;
@@ -126,6 +126,7 @@ namespace Logic.Build
                     CurrentPiece.Rotate(GameBoard.BoardState);
                     break;
                 case 's':
+                    score = score + 10;
                     CurrentPiece.MoveDown(GameBoard.BoardState);
                     break;
                 case 'a':
@@ -135,11 +136,14 @@ namespace Logic.Build
                     CurrentPiece.MoveRight(GameBoard.BoardState);
                     break;
                 case ' ':
-                    CurrentPiece.Drop(GameBoard.BoardState);
+                    score = score + CurrentPiece.Drop(GameBoard.BoardState);
                     break;
                 case 'q':
                     if(_canSave)
                     SavePiece(); 
+                    break;
+                case '`':
+                    Stop();
                     break;
                 default: throw new Exception("Key is not a command");
             }

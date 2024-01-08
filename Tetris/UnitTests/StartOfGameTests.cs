@@ -1,6 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Logic.Build;
-using System.Threading;
 
 namespace UnitTests
 {
@@ -12,7 +11,7 @@ namespace UnitTests
         {
             GameController.Get().Command(' '); //start the game
             Assert.AreEqual(0, GameController.Get().GetScore());
-            GameController.Get().Stop();
+            GameController.Get().Command('`');
         }
 
         [TestMethod]
@@ -23,7 +22,7 @@ namespace UnitTests
             Assert.AreEqual(4, GameController.Get().GetCurrent().Count);
             Assert.IsTrue(GameController.Get().GetNext() != null);
             Assert.AreEqual(4, GameController.Get().GetNext().Count);
-            GameController.Get().Stop();
+            GameController.Get().Command('`');
         }
 
         [TestMethod]
@@ -31,7 +30,7 @@ namespace UnitTests
         {
             GameController.Get().Command(' '); //start the game
             Assert.AreEqual(0, GameController.Get().GetState().Count);
-            GameController.Get().Stop();
+            GameController.Get().Command('`');
         }
 
         [TestMethod]
@@ -39,7 +38,7 @@ namespace UnitTests
         {
             GameController.Get().Command(' '); //start the game
             Assert.AreEqual(0, GameController.Get().GetSaved().Count);
-            GameController.Get().Stop();
+            GameController.Get().Command('`');
         }
     }
 }

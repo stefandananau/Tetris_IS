@@ -22,7 +22,7 @@ namespace UnitTests
             {
                 Assert.AreEqual(xValues[i] - 1, GameController.Get().GetCurrent().ElementAt(i).X);
             }
-            GameController.Get().Stop();
+            GameController.Get().Command('`');
         }
 
         [TestMethod]
@@ -39,7 +39,7 @@ namespace UnitTests
             {
                 Assert.AreEqual(xValues[i] + 1, GameController.Get().GetCurrent().ElementAt(i).X);
             }
-            GameController.Get().Stop();
+            GameController.Get().Command('`');
         }
 
         [TestMethod]
@@ -56,7 +56,7 @@ namespace UnitTests
             {
                 Assert.AreEqual(yValues[i] + 1, GameController.Get().GetCurrent().ElementAt(i).Y);
             }
-            GameController.Get().Stop();
+            GameController.Get().Command('`');
         }
     }
 }

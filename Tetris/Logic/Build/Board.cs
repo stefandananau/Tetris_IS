@@ -37,7 +37,15 @@ namespace Logic.Build
                     i--;
                 }
             }
-            return number_of_lines;
+            switch (number_of_lines)
+            {
+                case 0: return 0;
+                case 1: return 500;
+                case 2: return 1500;
+                case 3: return 4000;
+                case 4: return 10000;
+                default: throw new Exception("Something wrong");
+            }
         }
 
         private bool IsCompleted(int line)

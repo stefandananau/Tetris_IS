@@ -13,7 +13,7 @@ namespace UnitTests
             GameController.Get().Command(' '); //start the game
             GameController.Get().Command('q'); //save piece
             Assert.AreEqual(4, GameController.Get().GetSaved().Count);
-            GameController.Get().Stop();
+            GameController.Get().Command('`');
         }
 
         [TestMethod]
@@ -24,7 +24,7 @@ namespace UnitTests
             GameController.Get().Command(' '); //drop piece
             Thread.Sleep(1000);
             Assert.AreEqual(4, GameController.Get().GetState().Count);
-            GameController.Get().Stop();
+            GameController.Get().Command('`');
         }
     }
 }

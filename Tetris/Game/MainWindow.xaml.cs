@@ -24,6 +24,7 @@ namespace Game
                 var current = GameController.Get().GetCurrent();
                 var next = GameController.Get().GetNext();
                 var saved = GameController.Get().GetSaved();
+                Score.Content = GameController.Get().GetScore().ToString();
                 DrawingHelper.RemoveUiElements(Board);
                 DrawingHelper.RemoveUiElements(Next);
                 DrawingHelper.RemoveUiElements(Saved);
@@ -44,6 +45,7 @@ namespace Game
                 {
                     DrawingHelper.DrawRectangle(Saved, new Point(block.X * 45, (block.Y + 1) * 45), new Point((block.X + 1) * 45, (block.Y + 2) * 45), 1, block.Color, 1);
                 }
+                
             });
         }
     }

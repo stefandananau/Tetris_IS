@@ -30,7 +30,7 @@ namespace Logic.Build.Pieces.Base
             }
             while (!isPlaced)
             {
-                bonusScore = bonusScore + 10;
+                bonusScore = bonusScore + 15;
                 MoveDown(boardState);
             }
             return bonusScore;
